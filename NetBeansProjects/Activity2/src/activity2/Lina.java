@@ -19,5 +19,5 @@ public  class Lina extends Hero{
    public void block(Skill skill){
    this.hp-=0;
    }
-   
+   public void upgradeSkillLevel(Skill skill){skill.setLevel();}
 }

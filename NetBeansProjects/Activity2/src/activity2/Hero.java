@@ -29,5 +29,6 @@ public abstract class Hero {
     public abstract void takeDamage(int damage);
     public abstract void attack(Hero target,Skill skill);
     public abstract void block(Skill skill);
+    public abstract void upgradeSkillLevel(Skill skill);
 }
 
