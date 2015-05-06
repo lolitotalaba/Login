@@ -11,8 +11,24 @@ and open the template in the editor.
         <servlet-name>HelloWorld</servlet-name>
         <servlet-class>com.Servlet.practice.HelloworldServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ProcessAdminServlet</servlet-name>
+        <servlet-class>com.Servlet.practice.ProcessAdminServlet</servlet-class> //////////////////
+    </servlet>
+    <servlet>
+        <servlet-name>ProcessUserServlet</servlet-name>
+        <servlet-class>com.Servlet.practice.ProcessUserServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>HelloWorld</servlet-name>
         <url-pattern>/greeting</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProcessAdminServlet</servlet-name>
+        <url-pattern>/ProcessAdminServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProcessUserServlet</servlet-name>
+        <url-pattern>/ProcessUserServlet</url-pattern>
     </servlet-mapping>
 </web-app>

@@ -17,15 +17,8 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author asi
  */
-public class HelloworldServlet extends HttpServlet {
+public class ProcessAdminServlet extends HttpServlet{
     
-
-    @Override
-    public void init() throws ServletException {
-        super.init(); //To change body of generated methods, choose Tools | Templates.
-    }
-    
-
     @Override
     public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
      //  super.doGet(req, resp); //To change body of generated methods, choose Tools | Templates.
@@ -47,21 +40,13 @@ public class HelloworldServlet extends HttpServlet {
         
         if(destiny1.equals("PACMAN")){destiny+=" MANNY PACQUIAO";}
          else{destiny+=" MAYWEATHER";}
-        if(type.equals("admin")){
-            RequestDispatcher rd = req.getRequestDispatcher("/ProcessAdminServlet");
-            rd.forward(req,resp);
-        }
-         if(type.equals("user")){
-            RequestDispatcher rd = req.getRequestDispatcher("/ProcessUserServlet");
-            rd.forward(req,resp);
-        }
-            
-        out.println("<h1>Hello " + name+" !</h1>");
+      
+         
+        out.println("<h1>Hello " + type + " " +name+" !</h1>");
         out.println("<h2>You are a "+ course+ " student. </h2");
         out.println("<h2>You must learn"+language +" .</h2");
         out.println("<h2>Your boxer is "+destiny +" .</h2");
         
     }
    
-
 }
